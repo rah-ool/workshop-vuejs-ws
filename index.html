@@ -6,9 +6,16 @@
         <link href="styles.css" rel="stylesheet" />
     </head>
     <body>
-        <div id="main-app">
+      <div id="main-app">
+        <div class="links">
+          <router-link to="/">Our OG Punching Bag!</router-link>
+          <router-link to="/tim">Tim's Punching Bag</router-link>
+          <router-link to="/counter">Counter</router-link>
         </div>
-        
+        <router-view></router-view>
+      </div>
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
         <script src="app.js"></script>
     </body>
 </html>
